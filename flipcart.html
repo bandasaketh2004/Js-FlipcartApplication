@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+         padding: 0px;
+         margin: 0px;
+        }
+        .nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: rgb(59, 110, 127);
+            padding: 10px;
+            color: white;
+        }
+        .searchbar{
+            width: 600px;
+        }
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+           
+        }
+        .cards{
+            height: 330px;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            justify-content: space-evenly;
+            background-color: white;
+        }
+        .img{
+            height: 200px;
+            width: 200px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h2>Flipcart</h2>
+        <input type="text" placeholder="search" class="searchbar" onchange="filterData()" id="input">
+        <h2>Cart<sup id="cart">0</sup></h2>
+    </div>
+    <div id="container">
+        
+    </div>
+    <h2 style="text-align: center; ;">TotalBill : <span id="totalbill"></span></h2>
+    <script src="flipcart.js"></script>
+</body>
+</html>
